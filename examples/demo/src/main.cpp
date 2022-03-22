@@ -23,7 +23,7 @@
 #include <Arduino.h>
 #include <stdio.h>
 #include <tft_io.hpp>
-#include <ili9341.hpp>
+#include <ra8875.hpp>
 #include <gfx_cpp14.hpp>
 #ifdef USE_TRUETYPE
 #include "Maziro.h"

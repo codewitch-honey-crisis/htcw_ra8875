@@ -1,8 +1,8 @@
 #pragma once
-#include "gfx_core.hpp"
-#include "gfx_positioning.hpp"
-#include "gfx_pixel.hpp"
-#include "gfx_palette.hpp"
+#include <gfx_core.hpp>
+#include <gfx_positioning.hpp>
+#include <gfx_pixel.hpp>
+#include <gfx_palette.hpp>
 #include <Arduino.h>
 #include <SPI.h>
 // We use the decoupled bus system, but not really.
