@@ -315,7 +315,7 @@ namespace arduino {
             ty <<= 2;
             tx |= temp & 0x03;        // get the bottom x bits
             ty |= (temp >> 2) & 0x03; // get the bottom y bits
-            *out_point = type::apply_rotation(gfx::point16(tx,ty),true);
+            *out_point = type::translate_rotation(gfx::point16(tx,ty),true);
             // Clear TP INT Status
             reg(RA8875_INTC2, RA8875_INTC2_TP);
             return true;
