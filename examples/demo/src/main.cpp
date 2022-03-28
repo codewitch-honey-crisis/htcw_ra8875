@@ -8,17 +8,14 @@
 #define PIN_NUM_MOSI 23
 #define PIN_NUM_CLK  18
 #define PIN_NUM_CS   5
+#define PIN_NUM_RST 15
 
-#define PIN_NUM_DC   2
-#define PIN_NUM_RST  4
-#define PIN_NUM_BCKL 15
+#define PIN_NUM_INT   -1
 
 #define LCD_WIDTH 480
 #define LCD_HEIGHT 800
 #define LCD_ROTATION 1
-#define PIN_CS 5
-#define PIN_RST 15
-#define PIN_INT 2
+
 
 #include <Arduino.h>
 #include <stdio.h>
@@ -38,7 +35,7 @@ using bus_type = tft_spi_ex<LCD_HOST,PIN_NUM_CS,PIN_NUM_MOSI,PIN_NUM_MISO,PIN_NU
 #endif
 >;
 
-using lcd_type = ra8875<LCD_WIDTH,LCD_HEIGHT,bus_type,PIN_RST, PIN_INT,LCD_ROTATION>;
+using lcd_type = ra8875<LCD_WIDTH,LCD_HEIGHT,PIN_RST,bus_type,PIN_INT,LCD_ROTATION>;
 
 lcd_type lcd;
 

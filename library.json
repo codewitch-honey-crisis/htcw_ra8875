@@ -1,6 +1,6 @@
 {
     "name": "htcw_ra8875",
-    "version": "0.9.2",
+    "version": "0.9.3",
     "description": "Provides support for the RA8875 display device w/ GFX",
     "keywords": ["tft","ra8875","graphics","drawing"],
     "authors": {
