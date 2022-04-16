@@ -1,6 +1,6 @@
 {
     "name": "htcw_ra8875",
-    "version": "0.9.91",
+    "version": "0.9.92",
     "description": "Provides support for the RA8875 display device w/ GFX",
     "keywords": ["tft","ra8875","graphics","drawing"],
     "authors": {
@@ -21,7 +21,7 @@
     },
     "dependencies": {
         "codewitch-honey-crisis/htcw_gfx": "^1.1.2",
-        "codewitch-honey-crisis/htcw_tft_io": "^1.0.2"
+        "codewitch-honey-crisis/htcw_tft_io": "^1.0.7"
     },
     "examples": [
         {
